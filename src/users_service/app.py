@@ -32,7 +32,10 @@ def create_user():
         return "El nombre del usuario es requerido", 400
 
     users = load_item(USERS_FILE)
-    user = {'id': len(users) + 1, 'name': name}
+    user = {'id': len(users) + 1,
+            'name': name,
+            'purchased_products': []
+    }
     users.append(user)
     save_item(USERS_FILE, users)
 

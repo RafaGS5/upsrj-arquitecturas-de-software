@@ -143,19 +143,28 @@ class TestEvaluation(unittest.TestCase):
         self.assertIn(b'user_id', response.data)
 
     def test_create_purchase_invalid_user(self):
-        response = self.app.post('/purchases', json={"user_id": 999, "product_id": 3})
-        self.assertEqual(response.status_code, 400)
-        self.assertIn(b"usuario", response.data.lower())
+        initial_response = self.app.get('/purchases')
+        initial_count = initial_response.data.decode().count('purchase-card')
+        response = self.app.post('/purchases', data={"user_id": 999, "product_id": 1}, follow_redirects=True)
+        self.assertEqual(response.status_code, 404)
+        final_count = response.data.decode().count('purchase-card')
+        self.assertEqual(final_count, initial_count)
 
     def test_create_purchase_invalid_product(self):
-        response = self.app.post('/purchases', json={"user_id": 1, "product_id": 999})
-        self.assertEqual(response.status_code, 400)
-        self.assertIn(b"producto", response.data.lower())
+        initial_response = self.app.get('/purchases')
+        initial_count = initial_response.data.decode().count('purchase-card')
+        response = self.app.post('/purchases', data={"user_id": 1, "product_id": 999}, follow_redirects=True)
+        self.assertEqual(response.status_code, 404)
+        final_count = response.data.decode().count('purchase-card')
+        self.assertEqual(final_count, initial_count)
 
     def test_create_purchase_valid(self):
-        response = self.app.post('/purchases', json={"user_id": 1, "product_id": 3})
-        self.assertEqual(response.status_code, 201)
-        self.assertIn(b'"user_id": 1', response.data.decode())
+        initial_response = self.app.get('/purchases')
+        initial_count = initial_response.data.decode().count('purchase-card')
+        response = self.app.post('/purchases', data={"user_id": 1, "product_id": 3}, follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        final_count = response.data.decode().count('purchase-card')
+        self.assertEqual(final_count, initial_count + 1)
 
 
 if __name__ == '__main__':

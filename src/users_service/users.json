@@ -1,22 +1,215 @@
 [
     {
         "id": 1,
-        "name": "Alice"
+        "name": "Ana",
+        "purchased_products": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ]
     },
     {
         "id": 2,
-        "name": "Bob"
+        "name": "Lalo",
+        "purchased_products": []
     },
     {
         "id": 3,
-        "name": "Lalo"
+        "name": "Rafa",
+        "purchased_products": []
     },
     {
         "id": 4,
-        "name": "Carlos"
+        "name": "Lia",
+        "purchased_products": []
     },
     {
         "id": 5,
-        "name": "Carlos"
+        "name": "Nico",
+        "purchased_products": []
+    },
+    {
+        "id": 6,
+        "name": "Paolo",
+        "purchased_products": []
+    },
+    {
+        "id": 7,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 8,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 9,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 10,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 11,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 12,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 13,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 14,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 15,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 16,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 17,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 18,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 19,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 20,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 21,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 22,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 23,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 24,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 25,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 26,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 27,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 28,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 29,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 30,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 31,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 32,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 33,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 34,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 35,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 36,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 37,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 38,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 39,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 40,
+        "name": "Carlos",
+        "purchased_products": []
+    },
+    {
+        "id": 41,
+        "name": "Carlos",
+        "purchased_products": []
     }
 ]
